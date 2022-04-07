@@ -1,0 +1,265 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --black:#000;
+    --ccccc:#ccc;
+    --white:#fff;
+}
+
+#header {
+    overflow: hidden;
+}
+
+
+#header .heading-top {
+    height: 70px;
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    font-size: 24px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    overflow: hidden;
+}
+
+#subnav-menu {display:none;}
+
+.icon-bar i {
+    cursor: pointer;
+    padding: 15px 18px;
+}
+
+.icon-bar i:hover {
+    background-color: var(--ccccc);
+}
+
+.menu #nav{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    z-index: 2;
+    overflow: hidden;
+}
+
+#nav {
+    padding-top: 100px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    min-width: 300px;
+    width: 0;
+    transition: 0.5s;
+    background-color: var(--white);
+}
+
+
+#nav li {
+    padding: 30px;
+}
+
+#nav li:hover {
+    background-color: var(--ccccc);
+    cursor: pointer;
+}
+
+#nav li a {
+    color: #000;
+    font-size: 24px;
+}
+
+#subnav-menu:checked~.menu {
+    margin-left: -500px;
+    position: absolute;
+    transition: 2.7s;
+}
+
+#subnav-menu:checked~.navv {
+    margin-left: -500px;
+    position: absolute;
+    transition: 0.7s;
+}
+
+.all-slider {
+    border-bottom:1px solid var(--ccccc);
+    overflow: hidden;
+    max-width: 1250px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 50px;
+    overflow: hidden;
+}
+
+#slider {
+    padding-top: 50px;
+    overflow: hidden;
+}
+
+.calc {
+    float: left;
+    width: calc(100%/4);
+    padding: 0px 8px;
+}
+
+.calc img {
+    width: 100%;
+}
+
+.text h1 {
+    font-size: 24px;
+    font-weight: 100;
+    margin: 15px 0;
+}
+
+.text p {
+    font-size: 18px;
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+.section {
+    text-align: center !important;
+    padding: 64px 0px !important;
+}
+
+.section ul li {
+    display: inline-block;
+}
+
+
+.balck a {
+    color: var(--black);
+    padding: 8px 16px;
+}
+
+.section a:hover {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.section span {
+    background-color: var(--black);
+    padding: 8px 16px;
+    color: var(--white);
+}
+
+.section span:hover {
+    background-color: var(--ccccc);
+    color: var(--black);
+}
+
+#content {
+    padding: 50px 80px;
+    text-align: center;
+    border-bottom:1px solid #ccc ;
+}
+
+.section-list h1 {
+    font-size: 24px;
+    font-weight: 100;
+    margin: 30px 0;
+}
+
+.text-about {
+    padding: 32px 0;
+}
+
+.text-about h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.text-about i {
+    font-size: 18px;
+}
+
+.text-about p {
+    margin: 15px 0;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+#footer {
+    padding: 60px 0;
+    max-width: 1250px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.list {
+    width: calc(100%/3);
+    float: left;
+    padding:0 20px;
+}
+
+.list h3 {
+    font-size: 24px;
+    font-weight: 100;
+}
+
+.list .pxp {
+    font-size: 16px;
+    margin: 20px 0;
+    line-height: 1.6;
+}
+
+.list a {
+    color: var(--black);
+    border-bottom: 2px solid var(--black);
+}
+
+.block {
+    margin: 14px 0;
+    display: flex;
+}
+
+.block img {
+    width: 50px;
+}
+
+.next {
+    padding: 10px 0;
+    border-bottom:1px solid #ccc ;
+}
+
+.txt {
+    padding: 0px 15px;
+}
+
+.txt p {
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.all-btn  {
+    margin: 20px 0;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+.black {
+    background-color: var(--black);
+    color: #fff;
+    padding: 3px 5px;
+    font-size: 15px;
+}
+
+.white {
+    background-color: #616161;
+    color: var(--white);
+    font-size: 15px;
+    padding: 3px 5px;
+}

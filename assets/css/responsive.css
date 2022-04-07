@@ -1,0 +1,56 @@
+/* BREAK POINT */
+
+/* PC */
+@media (min-width:1024px) {
+  
+}
+
+/* Tablet */
+@media (min-width:740px) and (max-width:1024px) {
+    #header .heading-top {
+        padding: 0px 10px;
+    }
+    
+    .calc, .list  {
+        float: none;
+        width: 100%;
+    }
+
+    .section-list img {
+        width: 100%;
+    }
+
+    .text-about p {
+        text-align: justify;
+    }
+
+    .list {
+        margin: 50px 0;
+    }
+   
+}
+
+/* Mobile */
+@media (max-width:740px) {
+    #header .heading-top {
+        padding: 0px 10px;
+    }
+
+    .calc, .list  {
+        float: none;
+        width: 100%;
+    }
+
+    .section-list img {
+        width: 100%;
+    }
+
+    .text-about p {
+        text-align: justify;
+    }
+
+    .list {
+        margin: 50px 0;
+    }
+}
+
